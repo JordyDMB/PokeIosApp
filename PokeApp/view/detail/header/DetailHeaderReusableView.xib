@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DetailHeaderReusableView" id="U6b-Vx-4bR" customClass="DetailHeaderReusableView" customModule="PokeApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tcl-TK-i3C">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfe-1z-ZZY">
+                            <rect key="frame" x="10" y="16" width="300" height="18"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                            <color key="textColor" name="AccentColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8C2-zR-rqC">
+                            <rect key="frame" x="10" y="35" width="300" height="1"/>
+                            <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="des-Qx-7wA"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="jfe-1z-ZZY" firstAttribute="centerX" secondItem="tcl-TK-i3C" secondAttribute="centerX" id="Iwk-ZX-9d0"/>
+                        <constraint firstItem="8C2-zR-rqC" firstAttribute="leading" secondItem="tcl-TK-i3C" secondAttribute="leading" constant="10" id="X4g-We-ppd"/>
+                        <constraint firstItem="jfe-1z-ZZY" firstAttribute="centerY" secondItem="tcl-TK-i3C" secondAttribute="centerY" id="X4i-b8-4kG"/>
+                        <constraint firstItem="jfe-1z-ZZY" firstAttribute="leading" secondItem="tcl-TK-i3C" secondAttribute="leading" constant="10" id="fYR-hr-wb1"/>
+                        <constraint firstItem="8C2-zR-rqC" firstAttribute="top" secondItem="jfe-1z-ZZY" secondAttribute="bottom" constant="1" id="gTf-zm-xqV"/>
+                        <constraint firstAttribute="trailing" secondItem="8C2-zR-rqC" secondAttribute="trailing" constant="10" id="zHb-5I-A9J"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <constraints>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="tcl-TK-i3C" secondAttribute="trailing" id="EnT-18-egh"/>
+                <constraint firstItem="tcl-TK-i3C" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="HRY-z1-5Or"/>
+                <constraint firstItem="tcl-TK-i3C" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="gko-9l-Dx2"/>
+                <constraint firstAttribute="bottom" secondItem="tcl-TK-i3C" secondAttribute="bottom" id="lrK-XN-GvR"/>
+            </constraints>
+            <connections>
+                <outlet property="label" destination="jfe-1z-ZZY" id="apb-CE-acJ"/>
+            </connections>
+            <point key="canvasLocation" x="-73.282442748091597" y="19.718309859154932"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
