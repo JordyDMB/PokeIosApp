@@ -1,9 +1,4 @@
-//
-//  DetailHeaderReusableView.swift
-//  PokeApp
-//
-//  Created by MacBookTicsInplanet on 7/3/25.
-//
+
 
 import UIKit
 

@@ -1,9 +1,4 @@
-//
-//  AppDelegate.swift
-//  PokeApp
-//
-//  Created by MacBookTicsInplanet on 6/3/25.
-//
+
 
 import UIKit
 
