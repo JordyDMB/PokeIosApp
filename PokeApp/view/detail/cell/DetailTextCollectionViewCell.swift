@@ -16,8 +16,6 @@ class DetailTextCollectionViewCell: UICollectionViewCell {
     }
     
     func setText(txt : String) {
-//        print("-----------")
-//        print(txt)
         label.text = txt
     }
 

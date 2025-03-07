@@ -13,9 +13,9 @@ class DetailViewController: UIViewController {
         if let mAbility = ability {
             title = mAbility.name.capitalized
             viewModel.setAbility(ability: mAbility)
-            viewModel.fetchDetail()
-            setupCollectionView()
             setupViewModel()
+            setupCollectionView()
+            viewModel.fetchDetail()
         }
     }
     
@@ -24,7 +24,6 @@ class DetailViewController: UIViewController {
         collectionDetail.dataSource = self
         collectionDetail.register(UINib(nibName: "DetailTextCollectionViewCell", bundle: nil),  forCellWithReuseIdentifier: "DetailTextCollectionViewCell")
         collectionDetail.register(UINib(nibName: "DetailHeaderReusableView", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "DetailHeaderReusableView")
-        
     }
     
     func setupViewModel(){
